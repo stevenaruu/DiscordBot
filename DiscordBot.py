@@ -1,9 +1,22 @@
 import requests
 import time
 
+message = (
+    "SELL ANY SCIENCE STUFF AT ➡️ LENATHEA⬅️\n"
+    "GO ➡️ LENATHEA"
+    "GO ➡️ LENATHEA"
+    "GO ➡️ LENATHEA\n"
+    "🟦 Chem B 200 1:WL"
+    "🟪 Chem P 200/1:WL:"
+    "🟥 Chem R 200/1:WL:"
+    "🟩 Chem G 200/1:WL:"
+    ":fuelpump:Fuel Pack 10/1:WL:\n"
+    "LAST BUT NOT LEAST GO ➡️ LENATHEA"
+)
+
 def send_discord_message():
     payload = {
-        'content': "SELL ANY SCIENCE STUFF AT ➡️ LENATHEA⬅️\n\nGO ➡️ LENATHEA\nGO ➡️ LENATHEA\nGO ➡️ LENATHEA\n\n🟦 Chem B 200 1:WL:\n🟪 Chem P 200/1:WL:\n🟥 Chem R 200/1:WL:\n🟩 Chem G 200/1:WL:\n:fuelpump:Fuel Pack 10/1:WL:\n\nLAST BUT NOT LEAST GO ➡️ LENATHEA"
+        'content': message
     }
 
     header = {
