@@ -2,7 +2,7 @@ import requests
 import time
 
 message = (
-    "SELL ANY SCIENCE STUFF AT ➡️ LENATHEA⬅️\n"
+    "SELL ANY SCIENCE STUFF AT ➡️LENATHEA⬅️\n"
     "GO ➡️ LENATHEA"
     "GO ➡️ LENATHEA"
     "GO ➡️ LENATHEA\n"
