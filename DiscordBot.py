@@ -8,16 +8,17 @@ AUTH = os.getenv("AUTH")
 REQUEST_URL = os.getenv("REQUEST_URL")
 
 message = (
-    "SELL ALL CHEMICAL AT ➡️LENATHEA⬅️\n\n"
+    "SELL ALL CHEMICAL AT ➡️ LENATHEA ⬅️\n\n"
     "GO ➡️ LENATHEA\n"
     "GO ➡️ LENATHEA\n"
     "GO ➡️ LENATHEA\n\n"
-    "🟦 Chem B 200/1:WL:\n"
-    "🟪 Chem P 160/1:WL:\n"
-    "🟥 Chem R 200/1:WL:\n"
-    "🟩 Chem G 200/1:WL:\n"
-    "🟨 Chem Y 40/1:WL:\n"
-    "LAST BUT NOT LEAST GO ➡️ LENATHEA"
+    "🟦 Blue Chemical   (B Chem) 200/1 :WL: \n"
+    "🟪 Pink Chemical   (P Chem) 160/1 :WL: \n"
+    "🟥 Red Chemical    (R Chem) 200/1 :WL: \n"
+    "🟩 Green Chemical  (G Chem) 200/1 :WL: \n"
+    "🟨 Yellow Chemical (Y Chem) 40/1 :WL: \n\n"
+    "LAST BUT NOT LEAST GO ➡️ LENATHEA\n\n"
+    "```maeng oshi ku satu-satunya~```"
 )
 
 def send_discord_message():
@@ -34,7 +35,7 @@ def send_discord_message():
 
     if(r.status_code == 200):
         print("Waiting for 2 hours...")
-        print("message has been successfully sent.\n")
+        print("message has been successfully sent.")
         countdown_timer(2 * 60 * 60)  
 
 def countdown_timer(seconds):
