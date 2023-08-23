@@ -1,6 +1,13 @@
 import requests
 import time
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+AUTH = os.getenv("AUTH")
+REQUEST_URL = os.getenv("REQUEST_URL")
+
 message = (
     "SELL ALL CHEMICAL AT ➡️LENATHEA⬅️\n\n"
     "GO ➡️ LENATHEA\n"
@@ -20,10 +27,10 @@ def send_discord_message():
     }
 
     header = {
-        'authorization': 'MTA0NzQ4MjcwNjYwNDMyNjkyNA.GPIugg.UCysgglt6FdrHpWlfOnr1qcfusEJb_p7EPUHW8'
+        'authorization': AUTH
     }
 
-    r = requests.post('https://discord.com/api/v9/channels/762448042011000842/messages', data=payload, headers=header)
+    r = requests.post(REQUEST_URL, data=payload, headers=header)
 
     if(r.status_code == 200):
         print(r.status_code, r.reason)
