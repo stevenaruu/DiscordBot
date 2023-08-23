@@ -34,8 +34,8 @@ def send_discord_message():
 
     if(r.status_code == 200):
         print("Waiting for 2 hours...")
-        countdown_timer(2 * 60 * 60)
         print("message has been successfully sent.\n")
+        countdown_timer(2 * 60 * 60)  
 
 def countdown_timer(seconds):
     while seconds:
@@ -48,5 +48,3 @@ def countdown_timer(seconds):
 
 while True:
     send_discord_message()
-    # time.sleep(5 * 60)  # sleep every 5 minutes
-    time.sleep(2 * 60 * 60)  # sleep every 2 hours
